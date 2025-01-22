@@ -4,7 +4,6 @@ session_start();
 $colors = ["rosso", "giallo", "verde", "blu"];
 
 if (!isset($_SESSION["target"])) {
-    shuffle($colors);
     $_SESSION["target"] = array_map(fn() => $colors[rand(0, 3)], range(1, 4));
     $_SESSION["attempts"] = 0;
     $_SESSION["max_attempts"] = 10;
