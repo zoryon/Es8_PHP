@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.guess-slot {
+    height: 100%;
+    border: 1px solid rgb(228, 228, 231);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.guess-slot > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
